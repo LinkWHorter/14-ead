@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hodowla gryzoni</title>
+  </head>
+  <style>
+    body {
+      background-color: lightgray;
+    }
+    a {
+      font-size: 24px;
+      cursor: pointer;
+      text-decoration: none;
+      color: lightgray;
+      transition: color 0.5s;
+    }
+
+    p:hover {
+      cursor: default;
+    }
+
+    #homka1 {
+      color: red;
+    }
+
+    .homka1 {
+      margin: 1%;
+    }
+    .homka2 {
+      margin: 5%;
+    }
+    .homka3 {
+      margin: 8%;
+    }
+    .homka4 {
+      margin: 6%;
+    }
+    .homka5 {
+      margin: 15%;
+    }
+    .homka6 {
+      margin: 32%;
+    }
+    .homka7 {
+      margin: 0;
+      text-align: center;
+      border-radius: 524px;
+      color: lightgray;
+      margin: 14%;
+      transform: rotate(30deg);
+      font-size: 100px;
+      padding-bottom: 50px;
+    }
+    span {
+      font-size: 244px;
+      margin: 0;
+    }
+  </style>
+  <body>
+    <div class="href-info">
+      <p class="homka1"><a id="homka1" href="">Тык</a></p>
+      <p class="homka2"><a id="homka2" href="">Тык</a></p>
+      <p class="homka3"><a id="homka3" href="">Тык.</a></p>
+      <p class="homka4"><a id="homka4" href="">Тык..</a></p>
+      <p class="homka5"><a id="homka5" href="">Тык...</a></p>
+      <p class="homka6"><a id="homka6" href="">♡</a></p>
+    </div>
+    <div>
+      <p class="homka7" id="homka7"><span>♡</span><br>С 14, пух :))</p>
+
+    </div>
+    <script>
+        document.querySelector('#homka1').addEventListener('click', function(event) {
+          event.preventDefault();
+          document.querySelector('#homka1').style.color = 'darkgray';
+          document.querySelector('#homka2').style.color = 'red';
+        });
+
+        document.querySelector('#homka2').addEventListener('click', function(event) {
+          event.preventDefault();
+          document.querySelector('#homka2').style.color = 'darkgray';
+          document.querySelector('#homka3').style.color = 'red';
+        });
+
+        document.querySelector('#homka3').addEventListener('click', function(event) {
+          event.preventDefault();
+          document.querySelector('#homka3').style.color = 'darkgray';
+          document.querySelector('#homka4').style.color = 'red';
+        });
+
+        document.querySelector('#homka4').addEventListener('click', function(event) {
+          event.preventDefault();
+          document.querySelector('#homka4').style.color = 'darkgray';
+          document.querySelector('#homka5').style.color = 'red';
+        });
+
+        document.querySelector('#homka5').addEventListener('click', function(event) {
+          event.preventDefault();
+          document.querySelector('#homka5').style.color = 'darkgray';
+          document.querySelector('#homka6').style.color = 'red';
+        });
+
+        document.querySelector('#homka6').addEventListener('click', function(event) {
+          event.preventDefault();
+          document.querySelector('#homka6').style.color = 'lightgray';
+          document.querySelector('#homka7').style.color = 'red';
+        });
+    </script>
+  </body>
+</html>
